@@ -1,0 +1,19 @@
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(160 224 187);
+    border-radius: 20px;
+    text-shadow: 5px;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    color: "#4f6f8b";
+    font-size: 20px;
+}
+p:hover{
+    color: black;
+}

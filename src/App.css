@@ -1,0 +1,10 @@
+body{
+    background-image: url("./pictures/Pic1.jpg");
+    height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+}
+.Childcomp{
+    background-color: gray;
+}

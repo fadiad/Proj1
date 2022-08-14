@@ -1,0 +1,66 @@
+body{
+    background-image: url("../pictures/ActivitiesPic.jpg");
+}
+
+.card{
+    width: 12rem;
+    height: 15rem;
+    
+    
+}
+
+#summer{
+    background-image: url("../pictures/summer.jpg");
+}
+
+#winter{
+    background-image: url("../pictures/winter.jpg");
+}
+
+#spring{
+    background-image: url("../pictures/spring.jpg");
+}
+
+#autumn{
+    background-image: url("../pictures/Autumn.jpg");
+}
+
+label{
+    background-color: aqua;
+    text-align: center;
+    font-size:x-large
+    
+}
+.seasons{
+    display: flex;
+    justify-content: center; 
+}
+
+.Se-cards{
+    display: flex;
+    justify-content: center; 
+
+    height: 40px;
+}
+
+.Colors-cards{
+    display: flex;
+    justify-content: center; 
+
+    height: 40px;
+}
+
+.card-title{
+    text-align: center;
+    font-size:x-large;
+    color: red;
+}
+
+#Colors{
+    background-image: url("../pictures/colors-pic.jpg");
+  
+}
+
+/* .Colors{
+    
+} */
