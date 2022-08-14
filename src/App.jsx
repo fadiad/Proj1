@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Children from './Components/Children';
 import Home from './Components/Home';
-import Teacher from './Components/Teacher';
+import Teachers from './Components/TeacherComponents/Teachers';
 import Activities from './Components/Activities';
 // import './App.css';
 
@@ -13,7 +13,7 @@ class App extends Component {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} className='home'></Route>
-            <Route path="/teacher" element={<Teacher />} />
+            <Route path="/teacher" element={<Teachers />} />
             <Route path="/children" element={<Children />} />
             <Route path="/activities" element={<Activities />} />
           </Routes>

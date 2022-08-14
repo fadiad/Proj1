@@ -1,0 +1,49 @@
+.teacher {
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(160 224 187);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.teachers {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+p {
+    display: inline-block;
+    margin: 40px;
+}
+
+.addTeacher {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 180px;
+
+}
+
+.addTeacher:hover {
+     background-color: antiquewhite;
+    font-size: 330%;
+    width: fit-content;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inputs{
+    margin: 20px;
+}

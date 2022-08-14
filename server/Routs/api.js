@@ -6,6 +6,14 @@ const Shift = require("../models/Shift")
 const Children = require("../models/Children")
 
 
+
+router.get('/teachers', function (req, res) {
+    Teacher.find({}, function (err, Teachers) {
+        res.send(Teachers)
+    })
+})
+
+
 // get teacher by name or id number
 router.get('/teacher', function (req, res) {
 
@@ -21,8 +29,11 @@ router.get('/teacher', function (req, res) {
     })
 })
 
+
+
 // add teacher  
 router.post('/teacher', async function (req, res) {
+
     let teacher = new Teacher({
         "idNum": req.body.idNum,
         "name": req.body.name,
@@ -35,7 +46,9 @@ router.post('/teacher', async function (req, res) {
     })
     await teacher.save()
 
-    res.send("done")
+    Teacher.find({}, function (err, Teachers) {
+        res.send(Teachers)
+    })
 })
 
 module.exports = router
