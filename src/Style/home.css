@@ -21,12 +21,17 @@ h3:hover{
 
 .container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     font-size: 20px;
 }
-.card{
+
+.c{
     background-color:  rgb(160 224 187);
     margin: 20px;
     padding: 40px;
     border-radius: 30px;
 }
+
+
+
+ 

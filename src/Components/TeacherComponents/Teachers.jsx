@@ -21,6 +21,7 @@ export class Teachers extends Component {
 
   componentDidMount = async () => {
     let data = await axios.get(`http://localhost:4000/teachers`)
+    // console.log(data.data);
     this.setState({
       teachers: data.data
     })

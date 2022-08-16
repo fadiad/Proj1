@@ -8,6 +8,7 @@
     "@material/icon-button": "^13.0.0",
     "@material/react-button": "^0.13.0",
     "@material/textfield": "^14.0.0-canary.cc4ed13cc.0",
+    "@mui/x-date-pickers": "^5.0.0-beta.5",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +23,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.0",
+    "react-search-input": "^0.11.3",
     "react-textfield": "^0.0.5",
     "web-vitals": "^2.1.4"
   },

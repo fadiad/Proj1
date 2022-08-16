@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Children from './Components/Children';
 import Home from './Components/Home';
 import Teachers from './Components/TeacherComponents/Teachers';
 import Activities from './Components/Activities';
+import Children from './Components/ChildrenComponent/Children';
 // import './App.css';
 
 class App extends Component {

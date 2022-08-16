@@ -5,8 +5,6 @@ body{
 .card{
     width: 12rem;
     height: 15rem;
-    
-    
 }
 
 #summer{
@@ -60,7 +58,3 @@ label{
     background-image: url("../pictures/colors-pic.jpg");
   
 }
-
-/* .Colors{
-    
-} */

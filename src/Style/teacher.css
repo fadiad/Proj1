@@ -25,12 +25,12 @@ p {
 }
 
 .addTeacher:hover {
-     background-color: antiquewhite;
+    background-color: antiquewhite;
     font-size: 330%;
     width: fit-content;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    
+
 }
 
 input {
@@ -44,6 +44,13 @@ span {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.inputs{
+.inputs {
     margin: 20px;
+}
+
+.shift {
+    background-color: rgb(160 224 187);
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
 }

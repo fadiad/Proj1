@@ -1,60 +1,71 @@
 import React, { Component } from 'react'
 import Button from '@material/react-button';
-
 import '../../Style/teacher.css'
-
-
-
-
 import { Dialog, DialogTitle } from '@material-ui/core'
 
 
+export class addChild extends Component {
 
-export class AddTeacher extends Component {
 
     constructor() {
         super()
 
         this.state = {
-            name: '',
-            idNum: 0,
-            phone: 0,
-            address: '',
-            accountNum: 0,
+            childName: "",
+            childId: 0,
+            fatherName: "",
+            motherName: "",
+            fatherPhN: 0,
+            motherPhN: 0,
+            birthDate: Date,
         }
     }
     setName = (event) => {
         let name = event.target.value
         this.setState({
-            name: name
+            childName: name
+        })
+    }
+
+    setBD = (event) => {
+        let BD = event.target.value
+        this.setState({
+            birthDate: BD
         })
     }
 
     setIdNum = (event) => {
         let idNum = event.target.value
         this.setState({
-            idNum: idNum
+            childId: idNum
         })
     }
 
-    setPhone = (event) => {
-        let phone = event.target.value
+    setFphone = (event) => {
+        let Fphone = event.target.value
         this.setState({
-            phone: phone
+            fatherPhN: Fphone
         })
     }
 
-    setAddress = (event) => {
-        let address = event.target.value
+    setMphone = (event) => {
+        let Mphone = event.target.value
         this.setState({
-            address: address
+            motherPhN: Mphone
         })
     }
 
-    setAccountNum = (event) => {
-        let accountNum = event.target.value
+    setFname = (event) => {
+        let fName = event.target.value
         this.setState({
-            accountNum: accountNum
+            fatherName: fName
+        })
+    }
+
+    setMname = (event) => {
+        let mName = event.target.value
+        this.setState({
+            motherName: mName
         })
     }
 
@@ -62,15 +73,15 @@ export class AddTeacher extends Component {
         this.props.setCloseDialog()
     }
 
-    AddTeacher = () => {
-        this.props.AddTeacher(this.state.name, this.state.idNum, this.state.phone, this.state.address, this.state.accountNum)
+    AddChild = () => {
+        this.props.addChild(this.state.childName, this.state.childId, this.state.fatherName, this.state.motherName, this.state.fatherPhN,this.state.motherPhN,this.state.birthDate)
     }
 
     render() {
         return (
             <div>
                 <Dialog
-                    onClose={this.handleClose}
+                    onClose={this.handleclose}
                     open={this.props.openDialog}
                     fullWidth
                     PaperProps={{
@@ -82,7 +93,7 @@ export class AddTeacher extends Component {
                 >
                     <DialogTitle>
                         <div className='DialogTitle'>
-                            اضافة معلم
+                            اضافة طفل
                         </div>
                     </DialogTitle>
 
@@ -97,23 +108,33 @@ export class AddTeacher extends Component {
                             <input type="text" onChange={this.setIdNum} />
                         </div>
                         <div>
-                            <span>رقم الهاتف</span>
-                            <input type="text" onChange={this.setPhone} />
-                        </div>
-                        <div>
-                            <span>العنوان</span>
-                            <input type="text" onChange={this.setAddress} />
+                            <span > اسم الاب</span>
+                            <input type="text" onChange={this.setFname} />
                         </div>
 
                         <div>
-                            <span>رقم الحساب</span>
-                            <input type="text" onChange={this.setAccountNum} />
+                            <span > اسم الام</span>
+                            <input type="text" onChange={this.setMname} />
+                        </div>
+
+                        <div>
+                            <span >رقم هاتف الاب</span>
+                            <input type="text" onChange={this.setFphone} />
+                        </div>
+                        <div>
+                            <span>رقم هاتف الام</span>
+                            <input type="text" onChange={this.setMphone} />
+                        </div>
+
+                        <div>
+                            <span>تاريخ الميلاد </span>
+                            <input type="text" onChange={this.setBD} />
                         </div>
 
                     </div>
                     <div style={{ textAlign : "center"  }}>
-                        <Button style={{ margin: "10px", width: "80%" }} onClick={this.AddTeacher}>
-                            اضافة معلم
+                        <Button style={{ margin: "10px", width: "80%" }} onClick={this.AddChild}>
+                            اضافة طفل
                         </Button>
 
                         <Button style={{ margin: "10px", width: "80%" }} onClick={this.handleClose}>
@@ -126,5 +147,4 @@ export class AddTeacher extends Component {
     }
 }
 
-export default AddTeacher
- 
+export default addChild;
